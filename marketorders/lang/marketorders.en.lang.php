@@ -19,6 +19,7 @@ $L['cfg_warranty'] = array('Гарантийный срок (дней)');
 $L['cfg_tax'] = array('Комиссия за продажи (%)');
 $L['cfg_ordersperpage'] = array('Число заказов на странице');
 $L['cfg_adminid'] = array('ID пользователя для зачисления комиссии');
+$L['cfg_clearordersdays'] = array('Clean the base of unpaid orders after', 'days');
 
 $L['marketorders'] = 'Заказы в магазине';
 
