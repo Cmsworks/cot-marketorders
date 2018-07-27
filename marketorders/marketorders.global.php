@@ -169,3 +169,8 @@ foreach ($marketorders as $marketorder)
 		/* ===== */
 	}
 }
+if ($cfg['marketorders']['clearordersdays'] > 0)
+{
+	$clearordersdate = $sys['now'] - $cfg['payments']['clearordersdays'] * 60;
+	$db->delete($db_market_orders, "order_status='new' AND order_date<" . $clearpaymentsdate);
+}
